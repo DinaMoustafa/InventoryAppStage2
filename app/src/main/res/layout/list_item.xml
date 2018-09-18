@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding">
+
+    <TextView
+        android:id="@+id/product_name"
+        style="@style/TextViewStyle"
+        android:layout_alignBaseline="@id/product_quantity"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:textColor="@android:color/black"
+        tools:text="Pepsi" />
+
+    <TextView
+        android:id="@+id/product_price"
+        style="@style/TextViewStyle"
+        android:layout_alignBaseline="@id/product_sale"
+        android:layout_below="@id/product_name"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginTop="@dimen/margin_top"
+        android:textColor="@android:color/darker_gray"
+        tools:text="5.00" />
+
+    <TextView
+        android:id="@+id/product_quantity"
+        style="@style/TextViewStyle"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/margin_right"
+        android:textColor="@android:color/black"
+        tools:text="Quantity" />
+
+    <Button
+        android:id="@+id/product_sale"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/product_quantity"
+        android:layout_marginRight="@dimen/margin_right"
+        android:layout_marginTop="@dimen/margin_top"
+        android:background="@android:color/holo_blue_dark"
+        android:text="@string/sale"
+        android:textSize="@dimen/text_view_text_size"
+        android:textStyle="bold|italic" />
+
+</RelativeLayout>

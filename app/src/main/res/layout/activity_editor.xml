@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout style="@style/LinearLayoutStyle">
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/product" />
+
+        <EditText
+            android:id="@+id/product_name_edit_text"
+            style="@style/EditTextStyle"
+            android:inputType="textCapWords" />
+
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/LinearLayoutStyle">
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/price" />
+
+        <EditText
+            android:id="@+id/product_price_edit_text"
+            style="@style/EditTextStyle"
+            android:inputType="numberDecimal" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:padding="@dimen/layout_padding">
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:layout_gravity="center_vertical"
+            android:text="@string/quantity" />
+
+        <Button
+            android:id="@+id/increment_button"
+            style="@style/ButtonQuantityStyle"
+
+            android:layout_marginLeft="@dimen/margin_left_button"
+            android:onClick="incrementButton"
+            android:text="@string/plus_button" />
+
+        <EditText
+            android:id="@+id/product_quantity_edit_text"
+            style="@style/EditTextStyle"
+            android:layout_marginLeft="@dimen/margin_left_edit_text"
+            android:gravity="center"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/decrement_button"
+            style="@style/ButtonQuantityStyle"
+            android:layout_marginLeft="@dimen/margin_left_edit_text"
+            android:onClick="decrementButton"
+            android:text="@string/minus_button" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/LinearLayoutStyle">
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/supplier" />
+
+        <EditText
+            android:id="@+id/product_supplier_name_edit_text"
+            style="@style/EditTextStyle"
+            android:inputType="text" />
+
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/LinearLayoutStyle">
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/phone" />
+
+        <EditText
+            android:id="@+id/supplier_phone_edit_text"
+            style="@style/EditTextStyle"
+            android:inputType="phone" />
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/order_button"
+        android:layout_width="@dimen/order_button_width"
+        android:layout_height="@dimen/order_button_height"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/order_button_margin_bottom"
+        android:background="@android:color/holo_blue_dark"
+        android:onClick="orderButton"
+        android:text="@string/order_button"
+        android:textSize="@dimen/text_size_order_button"
+        android:textStyle="bold" />
+
+</LinearLayout>
